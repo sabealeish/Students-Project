@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Sign Up</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Sign Up</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Enter your name</label>
+                                    <input class="input--style-4" type="text" name="Enter your name" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Enter your ID number</label>
+                                    <input class="input--style-4" type="number" name="Enter your ID number" required>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Enter your email</label>
+                                    <input class="input--style-4" type="email" name="Enter your email" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Enter the city</label>
+                                    <input class="input--style-4" type="text" name="Enter the city" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Enter the neighborhood</label>
+                                    <input class="input--style-4" type="text" name="Enter the neighborhood" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Enter the mobile number</label>
+                                    <input class="input--style-4" type="number" name="Enter the mobile number" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Enter a relative's phone number</label>
+                                    <input class="input--style-4" type="number" name="Enter a relative's phone number" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Kinship Relationship</label>
+                                    <input class="input--style-4" type="text" name="Kinship Relationship" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Blood Group Type</label>
+                                    <input class="input--style-4" type="text" name="Blood Group Type" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">password</label>
+                                    <input class="input--style-4" type="password" name="password" required>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <div class="input-group" style="display: flex; align-items: center;">
+                                    <input style="width: 30px;" type="checkbox" required>
+                                    <span style="margin-left: 13px;">I agree to participate in the university transfer membership</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-t-15">
+                            <button onclick="openModal()" class="btn btn--radius-2 btn--blue" type="send">Send</button>
+                        </div>
+
+                        <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <p> Your request has been  successfully sent</p>
+                            <button class="btn2" onclick="redirectToPage()"><a href="../login/Student Login.html">LOG IN </a></button>
+                        </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .btn2
+        {
+            padding: 1.3em 3em;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .btn2:hover{
+            background-color: #23c483;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            transform: translateY(-7px);
+        }
+
+        .btn2:hover a{
+            color: white;
+        }
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.4); 
+            }
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content p{
+    font-size: 20px;
+    margin-left: 30%;
+}
+
+.modal-content button{
+    margin-left: 44%;
+    margin-top: 20px;
+}
+
+    </style>
+
+    <script>
+        function openModal() {
+  document.getElementById("myModal").style.display = "block";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+  document.body.style.backgroundColor = "white";
+}
+
+function redirectToPage() {
+  window.location.href = "";
+}
+
+    </script>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

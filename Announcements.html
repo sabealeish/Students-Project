@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+    <title>Announcements</title>
+</head>
+<body>
+    <!-- الكونتينر الي حاوي الصفحة كلها -->
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Pass Bus</h3>
+            <ul>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="indexst.html">
+                        <i class="fa-solid fa-chart-bar fa-fw"></i>
+                        <span>Main Page</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Announcements</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="Driver Information.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Driver Information</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="action">
+                    <div class="profile" onclick="menuToggle();">
+                        <img src="imgs/user.png" alt="">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><img src="imgs/edit.png" alt=""><a href="Updateprofile-student.html">Edit Profile</a></li>
+                            <li><img src="imgs/log-out.png" alt=""><a href="#" class="log">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    function menuToggle(){
+                        const toggleMenu = document.querySelector('.menu');
+                        toggleMenu.classList.toggle('active')
+                    }
+                </script>
+            </div>
+            <!-- End Head -->
+            <img src="imgs/logo.png" alt="">
+
+            <div class="main-ann" style="display: flex; align-items: center;">
+                <img style="max-width: 50px; height: 50px;" src="imgs/testimonial1.png" alt="">
+                <div style="margin-left: 5px;">
+                    <p>Team manager</p>
+                    <p style="font-size: 12px; color: #989898;">10:10  ، 22/3/2023</p>
+                </div>
+            </div>
+            <hr style="width: 50%; height: 7px; background-color: #3a727f; border-radius: 10px;">
+            <div class="main-ann2"  style="margin-top: 2%; text-align: center; text-transform:capitalize;">
+                <span style="font-weight: bold; font-size: 14px;"><i class="fa-solid fa-triangle-exclamation" style="color: #ffd43b;"></i> Tomorrow there will be no transportation due to the National Day</span>
+            </div>
+            <!-- Start Project Table -->
+            <!-- <div class="projects p-20 bg-white rad-10 m-20">
+                <h2 class="mt-0 mb-20">Announcements</h2>
+                <div class="responsive-table">
+                    <table class="fs-15 w-full">
+                        <thead>
+                            <tr>
+                                <td>Address</td>
+                                <td>Text</td>
+                                <td>Date & Time</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>grandmother</td>
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                <td>10 May 2022 | 00:12</td>
+                            </tr>
+
+                            <tr>
+                                <td>grandmother</td>
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                <td>10 May 2022 | 00:12</td>
+                            </tr>
+
+                            <tr>
+                                <td>grandmother</td>
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                <td>10 May 2022 | 00:12</td>
+                            </tr>
+
+                            <tr>
+                                <td>grandmother</td>
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                <td>10 May 2022 | 00:12</td>
+                            </tr>
+
+                            <tr>
+                                <td>grandmother</td>
+                                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                <td>10 May 2022 | 00:12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> -->
+            <!-- End Project Table -->
+        </div>
+    </div>    
+</body>
+</html>
